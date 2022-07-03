@@ -4,7 +4,7 @@ The web scraper project has been created using .NET 5 and .NET Core MVC.
 
 It has been made with dependency injection applied and using an n-tier architecture with application, service, data-access and domain layers in an attempt to separate the concerns as best as I can.
 
-Run project in visual studio (set application project as startup if it is not by default) then execute command “update-database” in package manager console on the data access layer to create and populate the tables in the database.
+Run project in visual studio then execute command “update-database” in package manager console on the data access layer to create and populate the tables in the database.
 
 If I had more time I would have:
 
