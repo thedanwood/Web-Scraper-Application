@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchEngineKeywordTracker.Application", "SearchEngineKeywordTracker.Application\SearchEngineKeywordTracker.Application.csproj", "{0E48BE08-6D60-4E90-944F-34951BB224C4}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchEngineKeywordTracker.DataAccessLayer", "SearchEngineKeywordTracker.DataAccessLayer\SearchEngineKeywordTracker.DataAccessLayer.csproj", "{40A1A809-B460-4ACF-B08A-F7C4EE787FD3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchEngineKeywordTracker.Domain", "SearchEngineKeywordTracker.Domain\SearchEngineKeywordTracker.Domain.csproj", "{07D4FDBB-6C9F-44A6-A42D-7DB92B55D1A0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchEngineKeywordTracker.Application", "SearchEngineKeywordTracker.Application\SearchEngineKeywordTracker.Application.csproj", "{0E48BE08-6D60-4E90-944F-34951BB224C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchEngineKeywordTracker.Services", "SearchEngineKeywordTracker.Services\SearchEngineKeywordTracker.Services.csproj", "{C141FB77-2B3B-497A-A2D4-B3252B03B462}"
 EndProject
