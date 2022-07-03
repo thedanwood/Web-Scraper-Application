@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0T9Cn4E8eo0GIjMYCBNogYPasOnHGFs1MbfKKgSfdI03a3zZBFlHZOgDxjogdlCGtRH9xTXQr3xiCdBYdLC5xw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Woody\\OneDrive\\Documents\\Development\\SearchEngineKeywordTracker\\SearchEngineKeywordTracker\\SearchEngineKeywordTracker.Domain\\SearchEngineKeywordTracker.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Woody\\.nuget\\packages\\enums.net\\4.0.0\\enums.net.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

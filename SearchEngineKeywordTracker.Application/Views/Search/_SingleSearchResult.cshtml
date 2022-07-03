@@ -1,0 +1,34 @@
+﻿@using SearchEngineKeywordTracker.Domain.Models
+@model SearchResultsModel
+<tr>
+    <td>
+        <p class="search-result-search-engine search-result-record">
+            @Model.SearchEngineName
+        </p>
+    </td>
+    <td>
+        <p class="search-result-url search-result-record">
+            @Model.Url
+        </p>
+    </td>
+    <td>
+        <p class="search-result-keyword search-result-record">
+            @Model.Keyword
+        </p>
+    </td>
+    <td>
+        <p class="search-result-positions search-result-record">
+            @{
+                string positionsString = (Model.PositionNumbers != null && Model.PositionNumbers.Count() > 0)
+                    ? String.Join(",", Model.PositionNumbers) : "Not found";
+            }
+            @positionsString
+        </p>
+    </td>
+     <td>
+        <span style="display:none">@(DateTime.Parse(Model.SearchedDateTime).ToString("YYYYMMDD"))</span> @*for jquery datatable sorting*@
+        <p class="search-result-datetime search-result-record">
+            @Model.SearchedDateTime
+        </p>
+    </td>
+</tr>

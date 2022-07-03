@@ -1,0 +1,27 @@
+﻿@using SearchEngineKeywordTracker.Domain.Models
+@model List<SearchResultsModel>
+<thead>
+    <tr>
+        <th>
+            Search Engine
+        </th>
+        <th>
+            Url
+        </th>
+        <th>
+            Keyword
+        </th>
+        <th>
+            Position(s)
+        </th>
+        <th>
+            Searched Date-Time
+        </th>
+    </tr>
+</thead>
+<tbody>
+    @foreach(SearchResultsModel searchResult in Model)
+    {
+        <partial model="@searchResult" name="~/Views/Search/_SingleSearchResult.cshtml"/>
+    }
+</tbody>

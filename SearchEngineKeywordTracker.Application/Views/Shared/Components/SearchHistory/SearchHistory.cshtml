@@ -1,0 +1,5 @@
+﻿@using SearchEngineKeywordTracker.Domain.Models
+@model List<SearchResultsModel> 
+<table id="search-history-table" class="w-100 table-striped table-hover">
+    <partial model="@Model" name="~/Views/Search/_SearchResultCollection.cshtml"/>
+</table>

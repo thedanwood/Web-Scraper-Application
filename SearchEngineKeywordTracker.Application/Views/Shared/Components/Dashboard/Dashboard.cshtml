@@ -1,0 +1,24 @@
+﻿@using SearchEngineKeywordTracker.Application.ViewModels
+@model DashboardViewModel
+<div class="children-inline-container">
+    <p>Search results for keyword</p>
+    <select id="dashboard-line-chart-keyword-select" onchange="dashboardlineChartKeywordChanged()">
+        @foreach(var keyword in Model.Keywords)
+        {
+            <option>@keyword</option>
+        }
+    </select>
+    and Url 
+    <select id="dashboard-line-chart-url-select" onchange="dashboardlineChartUrlChanged()">
+         @foreach(var url in Model.Urls)
+        {
+            <option>@url</option>
+        }
+    </select>
+</div>
+<canvas id="chart" style="max-height:600px;"></canvas>
+<script>
+    $(document).ready(function(){
+        getChartData();
+    })
+</script>

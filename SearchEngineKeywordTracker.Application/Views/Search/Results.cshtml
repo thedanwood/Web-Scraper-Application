@@ -1,0 +1,21 @@
+﻿@using SearchEngineKeywordTracker.Domain.Models
+@model List<SearchResultsModel>
+@{
+    string pageName = "Keyword Search Results";
+    ViewData["Title"] = pageName;
+}
+<h3>@pageName</h3>
+<hr />
+<a class="btn btn-primary mb-5" asp-action="index">
+    <i class="fa-solid fa-backward pe-2"></i>Back to Search and Dashboard
+</a>
+
+<table id="search-results-table" class="w-100 table-striped table-hover">
+    <partial model="@Model" name="~/Views/Search/_SearchResultCollection.cshtml"/>
+</table>
+
+@section Scripts{
+    <script>
+        $('#search-results-table').dataTable(); 
+    </script>
+}

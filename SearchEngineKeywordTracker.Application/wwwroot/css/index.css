@@ -1,0 +1,30 @@
+﻿.home-page-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.home-page-search-elements {
+    padding: 30px;
+    margin: 0 30px 30px 30px;
+    background-color: var(--light-blue);
+    position: relative;
+}
+
+#home-page-right-contents {
+    padding: 15px;
+    border: 1px solid lightgrey;
+    min-height: 300px;
+    position: relative;
+}
+
+.nav-tabs .nav-link {
+    cursor: pointer;
+}
+
+#generate-search-results-table, #generate-search-results-table tr, #generate-search-results-table .select2, #generate-search-results-table input {
+    width: 100% !important;
+}
+
+    #generate-search-results-table td:not(:first-child) {
+        margin-top: 10px;
+    }

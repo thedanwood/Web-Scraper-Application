@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SearchEngineKeywordTracker.Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap5.min.css" />
+    <link rel="stylesheet" href="~/lib/select2/dist/select2.min.css" />
+    <link rel="stylesheet" href="~/lib/jquery-datatables/dist/css/jquery-datatables-bootstrap5.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="row">
+                <div class="col-6">
+                    <a href="/Search/Index" class="non-styled-a">
+                        <h4><i class="fa-solid fa-magnifying-glass pe-2"></i>Search Engine Keyword Tracker</h4>
+                    </a>
+                </div>
+                <div class="col-6 text-end">
+                    <p>Created by Daniel Wood</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="top-bottom-padding-sm left-right-padding-md">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            Search Engine Keyword Tracker Project - Daniel Wood - 2022
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap5.min.js"></script>
+    <script src="~/lib/select2/dist/select2.min.js"></script>
+    <script src="~/lib/jquery-datatables/dist/js/jquery-datatables.min.js"></script>
+    <script src="~/lib/jquery-datatables/dist/js/jquery-datatables-bootstrap5.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

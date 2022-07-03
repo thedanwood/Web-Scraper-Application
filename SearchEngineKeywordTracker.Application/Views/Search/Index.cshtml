@@ -1,0 +1,78 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using SearchEngineKeywordTracker.Domain.Enums
+@model SearchEngineKeywordTracker.Application.Models.SearchEngineSearchModel
+@{
+    string pageName = "Search and Dashboard";
+    ViewData["Title"] = @pageName;
+}
+<link rel="stylesheet" href="~/css/index.css" />
+<h3>@pageName</h3>
+<hr />
+<div class="home-page-container top-bottom-padding-sm">
+    <div class="home-page-search-elements">
+        <partial name="_Loader" model="@("search-engine-search-loader")"/>
+        <form method="post" enctype="multipart/form-data" id="generate-search-results-form" action="/Search/Index">
+            <table id="generate-search-results-table">
+                <tr>
+                    <td>
+                        <label>Search Engine</label>
+                    </td>
+                    <td>
+                        <select id="search-engine-select" asp-for="@Model.SearchEngineTypes" name="SearchEngineTypes" class="form-control" placeholder="Select search engine(s)">
+                            @foreach (var searchEngineType in Model.AllowedSearchEngineTypes)
+                            {
+                                <option value="@searchEngineType.SearchEngineId">@searchEngineType.SearchEngineName</option>
+                            }
+                        </select>
+                        <span asp-validation-for="@Model.SearchEngineTypes"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Keyword(s)</label>
+                    </td>
+                    <td>
+                        <select asp-for="@Model.SearchKeywords" id="keywords-select" name="SearchKeywords" class="form-control" multiple="multiple" placeholder="Enter keyword(s)">
+                            @if (Model.SearchKeywords != null)
+                            {
+                                @foreach(string searchKeyword in Model.SearchKeywords)
+                                {
+                                    <option>@searchKeyword</option>
+                                }
+                            }
+                        </select>
+                        <span asp-validation-for="@Model.SearchKeywords"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">URL</label>
+                    </td>
+                    <td>
+                        <input asp-for="@Model.SearchUrl" id="search-url-input" name="SearchUrl" value="@Model.SearchUrl" class="form-control" placeholder="Enter URL" />
+                        <span asp-validation-for="@Model.SearchUrl"></span>
+                    </td>                    
+                </tr>
+            </table>
+            <input type="submit" class="btn btn-success mt-3" id="search-engine-search-submit" value="Get Results"/>
+        </form>
+    </div>
+    <div class="home-page-right-tabs">
+        <div class="nav nav-tabs">
+            <a class="nav-link active" id="search-history-section-btn" data-bs-toggle="tab" role="tab" aria-selected="true">Search History</a>
+            <a class="nav-link" id="dashboard-section-btn" data-bs-toggle="tab" role="tab" aria-selected="false">Dashboard</a>
+        </div>
+        <div id="home-page-right-contents">
+            <div id="search-hisory-dashboard-container">
+            </div>
+            <partial name="_Loader" model="@("home-page-dashboard-loader")"/>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+    <script src="~/js/dashboard-and-search-history.js"></script>
+    <script src="~/js/search-engine-search.js"></script>
+    <script src="~/lib/chart-js/dist/js/chart-js.min.js"></script>
+}

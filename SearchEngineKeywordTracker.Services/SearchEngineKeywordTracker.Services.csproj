@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>SearchEngineKeywordTracker.Services</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SearchEngineKeywordTracker.DataAccessLayer\SearchEngineKeywordTracker.DataAccessLayer.csproj" />
+  </ItemGroup>
+
+</Project>
