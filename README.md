@@ -17,7 +17,7 @@ If I had more time I would have:
 -	Created the interface as responsive
 -	Format current line chart better such as y axis start at 0, label axes, allow for further time ranges etc
 
-I appreciate there are gaps in my knowledge such as unit testing and front end framework, but I am extremely keen to learn new principles and practices and feel I would be a great fit for the team and company if given the chance.
+I appreciate there are gaps in my knowledge such as unit testing and front end framework, but I am extremely keen to learn these new practices and feel I would be a great fit for the team and company if given the chance.
 
 I hope I have done enough to proceed. However, if I haven’t it would be great to hear from you about what I could have done better.
 
