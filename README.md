@@ -26,9 +26,9 @@ Please let me know if there are any issues.
 Thank you for the opportunity and I look forward to hearing from you,
 
 Daniel Wood
-
-See screen shots below
 _______________________
+
+See screen shots below ↓ 
 
 ![image](https://user-images.githubusercontent.com/89601044/177089264-e3bc4542-2b71-4126-af6f-4ac62ebd24f5.png)
 
