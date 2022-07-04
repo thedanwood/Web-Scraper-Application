@@ -26,3 +26,19 @@ Please let me know if there are any issues.
 Thank you for the opportunity and I look forward to hearing from you,
 
 Daniel Wood
+
+See screen shots below
+_______________________
+
+![image](https://user-images.githubusercontent.com/89601044/177089264-e3bc4542-2b71-4126-af6f-4ac62ebd24f5.png)
+
+![image](https://user-images.githubusercontent.com/89601044/177089271-cca6efe7-e70f-4885-b0e3-a2ae7d7df8ce.png)
+
+![image](https://user-images.githubusercontent.com/89601044/177089284-3863b9ad-2ef4-47e9-9101-ba2ec6242f39.png)
+
+![image](https://user-images.githubusercontent.com/89601044/177089306-14299ca6-08be-4ffc-a711-d9c43ffda95f.png)
+
+
+
+
+
