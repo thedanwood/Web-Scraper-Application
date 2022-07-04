@@ -32,7 +32,7 @@ namespace SearchEngineKeywordTracker.Services
             Regex regex = await _searchEngineRepository.GetSearchEngineRegexByIdAsync(SearchEngineId);
             string formattedUrl = await _searchEngineService.FormatFullSearchUrlAsync(SearchEngineId, Keyword);
             List<Match> regexMatches = await GetKeywordMatchListAsync(regex, formattedUrl, Keyword);
-            List<int> keywordPositionList = regexMatches.Select((item, i) => new { value = item.Value, position = i + 1 }).Where(r => r.value.Contains("infotrack.co.uk")).Select(r => r.position).ToList();
+            List<int> keywordPositionList = regexMatches.Select((item, i) => new { value = item.Value, position = i + 1 }).Where(r => r.value.Contains(Url)).Select(r => r.position).ToList();
             return keywordPositionList;
         }
         public async Task<List<Match>> GetKeywordMatchListAsync(Regex RegexPattern, string FullUrl, string Keyword)
