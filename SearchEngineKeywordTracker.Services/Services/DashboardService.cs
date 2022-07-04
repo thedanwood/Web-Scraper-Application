@@ -38,7 +38,6 @@ namespace SearchEngineKeywordTracker.Services
                     {
                         datesForChart.Add(date);
                     }
-                    // code block
                     break;
             }
             return datesForChart;
