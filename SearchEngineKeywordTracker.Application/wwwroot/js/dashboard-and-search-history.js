@@ -9,7 +9,9 @@ function loadSearchHistoryViewComponent() {
         .then((result) => {
             $(loaderSelector).hide();
             $(viewComponentContainerSelector).html(result);
-            $("#search-history-table").dataTable();
+            $("#search-history-table").dataTable({
+                order: [[4, 'desc']],
+            });
         });
 }
 loadSearchHistoryViewComponent();
