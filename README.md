@@ -1,4 +1,4 @@
-# WebScraperApp
+# Web Scraper Application - July 2022
 
 The web scraper project has been created using .NET 5 and .NET Core MVC. 
 
