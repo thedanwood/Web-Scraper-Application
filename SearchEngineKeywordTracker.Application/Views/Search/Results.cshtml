@@ -16,6 +16,8 @@
 
 @section Scripts{
     <script>
-        $('#search-results-table').dataTable(); 
+        $('#search-results-table').dataTable({
+            order: [[2, 'asc']],
+        }); 
     </script>
 }
